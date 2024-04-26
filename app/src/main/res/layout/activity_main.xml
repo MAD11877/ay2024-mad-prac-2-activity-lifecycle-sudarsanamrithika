@@ -18,14 +18,15 @@
         android:paddingRight="100dp"
         android:paddingBottom="10dp"
         android:textAlignment="center"
-        android:text="MAD Practical"
+        android:text="@string/title"
         android:textColor="@color/white"
         android:textSize="32dp"
         android:textStyle="bold"
         tools:context=".MainActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <ImageView
         android:id="@+id/imageView"
@@ -57,13 +58,14 @@
         android:paddingTop="10dp"
         android:paddingRight="50dp"
         android:paddingBottom="10dp"
-        android:text="Save me"
+        android:text="@string/text"
         android:textAlignment="center"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 
     <TextView
         android:id="@+id/textView"

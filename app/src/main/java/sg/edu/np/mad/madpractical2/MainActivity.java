@@ -13,8 +13,9 @@ import android.widget.Button;
 import android.widget.QuickContactBadge;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import sg.edu.np.mad.madpractical2.practical2.R;
 
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,35 +28,33 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize a new User object
-        User user = new User("John Doe","MAD Developer", 1, false);
+        // Initialize a new user object
+        User user = new User("John Doe", "MAD Developer", 1, false);
 
         // Get the TextViews and Button from the layout
         TextView tvName = findViewById(R.id.tvName);
         TextView tvDescription = findViewById(R.id.tvDescription);
         Button btnFollow = findViewById(R.id.btnFollow);
 
-//        // Get the TextViews with the User's name, description and default button message
+        // Set the TextViews with the User's name, description and default button message
         tvName.setText(user.name);
         tvDescription.setText(user.description);
-        btnFollow.setText("FOLLOW");
+        btnFollow.setText("Follow");
 
         btnFollow.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 if (user.followed) {
-                    btnFollow.setText("FOLLOW");
+                    btnFollow.setText("Follow");
                     user.followed = false;
                 } else {
-                    btnFollow.setText("UNFOLLOW");
+                    btnFollow.setText("Unfollow");
                     user.followed = true;
                 }
             }
-
-
         });
 
-    }
 
+    }
 }
 

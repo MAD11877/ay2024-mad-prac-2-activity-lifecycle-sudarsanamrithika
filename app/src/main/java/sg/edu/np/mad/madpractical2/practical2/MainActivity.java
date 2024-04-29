@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         User user = new User("John Doe","MAD Developer", 1, false);
 
         // Get the TextViews and Button from the layout
-        TextView tvName = findViewById(R.id.textView);
-        TextView tvDescription = findViewById(R.id.textView2);
-        Button btnFollow = findViewById(R.id.button);
+        TextView tvName = findViewById(R.id.tvName);
+        TextView tvDescription = findViewById(R.id.tvDescription);
+        Button btnFollow = findViewById(R.id.btnMessage);
 
 //        // Get the TextViews with the User's name, description and default button message
         tvName.setText(user.name);
